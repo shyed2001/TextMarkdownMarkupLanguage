@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://iq.opengenus.org/markdown-cheatsheet/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Markdown cheatsheet</title>
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="stylesheet" type="text/css" href="./Markdown cheatsheet_files/screen.css"> 
+  <!-- for progress in navigation bar -->
+  <link rel="stylesheet" type="text/css" href="./Markdown cheatsheet_files/lightbox.css">
+  <!-- for syntax highlight -->
+  <link rel="stylesheet" type="text/css" href="./Markdown cheatsheet_files/prism.css">
+  <!-- merge2.css -> complexity.css + post_page.css -->
+  <link rel="stylesheet" type="text/css" href="./Markdown cheatsheet_files/merge2.css">
+
+  <!-- table of contents disabled -->
+  <!--
+  <link rel="stylesheet" type="text/css" href="/assets/css/head_tab.css?v=0ac4978b4f" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/tab.css?v=0ac4978b4f" />
+  -->
+  <!-- course page is not activated -->
+  <!--
+  <link rel="stylesheet" type="text/css" href="/assets/css/course_page.css?v=0ac4978b4f" />
+  -->
+  <link rel="stylesheet" type="text/css" href="./Markdown cheatsheet_files/search_page.css">
+  <!--
+  <link rel="stylesheet" type="text/css" href="/assets/css/navbar.css?v=0ac4978b4f" /> -->
+  <style>
+    a {
+      text-decoration: none !important;
+    }
+
+    #time {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    #scrollBtn {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 36px;
+      z-index: 999;
+      border: none;
+      outline: none;
+      background-color: #351ed478;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 50px;
+      width: 45px;
+    }
+
+    #scrollBtn:hover {
+      background-color: #351ed4;
+    }
+
+    @media (max-width: 480px) {
+      #scrollBtn {
+        right: 18px;
+        bottom: 80px;
+        transform: scale(0.9);
+      }
+    }
+  </style>
+
+  <meta name="description" content="In this markdown cheatsheet, you will learn about markdown heading, table, list, link, image, code, quote, highlight, bold, italics, strikethrough and others. Markdown is a simple lightweight markup language which is widely used as a formatting language on the web.">
+    <link rel="shortcut icon" href="https://iq.opengenus.org/favicon.png" type="image/png">
+    <link rel="canonical" href="https://iq.opengenus.org/markdown-cheatsheet/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="https://iq.opengenus.org/markdown-cheatsheet/amp/">
+    
+    <meta property="og:site_name" content="OpenGenus IQ: Computing Expertise &amp; Legacy">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Markdown cheatsheet">
+    <meta property="og:description" content="In this markdown cheatsheet, you will learn about markdown heading, table, list, link, image, code, quote, highlight, bold, italics, strikethrough and others. Markdown is a simple lightweight markup language which is widely used as a formatting language on the web. ">
+    <meta property="og:url" content="https://iq.opengenus.org/markdown-cheatsheet/">
+    <meta property="article:published_time" content="2019-03-28T20:28:23.000Z">
+    <meta property="article:modified_time" content="2019-03-28T20:28:23.000Z">
+    <meta property="article:tag" content="Software Engineering">
+    <meta property="article:tag" content="cheatsheet">
+    <meta property="article:tag" content="markdown">
+    <meta property="article:tag" content="guide">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/opengenus">
+    <meta property="article:author" content="https://www.facebook.com/opengenus">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Markdown cheatsheet">
+    <meta name="twitter:description" content="In this markdown cheatsheet, you will learn about markdown heading, table, list, link, image, code, quote, highlight, bold, italics, strikethrough and others. Markdown is a simple lightweight markup language which is widely used as a formatting language on the web. ">
+    <meta name="twitter:url" content="https://iq.opengenus.org/markdown-cheatsheet/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="OpenGenus Foundation">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Software Engineering, cheatsheet, markdown, guide">
+    <meta name="twitter:site" content="@OpenGenus">
+    <meta name="twitter:creator" content="@opengenus">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "OpenGenus IQ: Computing Expertise &amp; Legacy",
+        "logo": "https://iq.opengenus.org/content/images/2018/02/ll.jpeg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "OpenGenus Foundation",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://iq.opengenus.org/content/images/2018/06/logo_small.png",
+            "width": 194,
+            "height": 156
+        },
+        "url": "https://iq.opengenus.org/author/opengenus/",
+        "sameAs": [
+            "https://iq.opengenus.org",
+            "https://www.facebook.com/opengenus",
+            "https://twitter.com/opengenus"
+        ]
+    },
+    "headline": "Markdown cheatsheet",
+    "url": "https://iq.opengenus.org/markdown-cheatsheet/",
+    "datePublished": "2019-03-28T20:28:23.000Z",
+    "dateModified": "2019-03-28T20:28:23.000Z",
+    "keywords": "Software Engineering, cheatsheet, markdown, guide",
+    "description": "In this markdown cheatsheet, you will learn about markdown heading, table, list, link, image, code, quote, highlight, bold, italics, strikethrough and others. Markdown is a simple lightweight markup language which is widely used as a formatting language on the web. ",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://iq.opengenus.org/"
+    }
+}
+    </script>
+
+    <script src="./Markdown cheatsheet_files/ghost-sdk.min.js.download"></script>
+<script>
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "06875a67cb74"
+});
+</script>
+    <meta name="generator" content="Ghost 1.25">
+    <link rel="alternate" type="application/rss+xml" title="OpenGenus IQ: Computing Expertise &amp; Legacy" href="https://iq.opengenus.org/rss/">
+    <!--
+<style> #M697970ScriptRootC1113287 { min-height: 300px; }</style>
+<div id="M697970ScriptRootC1113287">
+</div>
+<script src="https://jsc.mgid.com/i/q/iq.opengenus.org.1113287.js" async>
+</script>
+-->
+<script data-ad-client="ca-pub-6329206778297580" async="" src="./Markdown cheatsheet_files/f.txt"></script>
+
+<script type="application/javascript" src="./Markdown cheatsheet_files/app.js.download" async=""></script>
+<script>
+    var truepush = window.truepush || [];
+
+    truepush.push(function(){
+        truepush.Init({
+            id: "5eeb87cefb2b695cf40c7968"
+        },function(error){
+            if(error) console.error(error);
+        })
+    })
+</script>
+
+<!--
+<script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CUO25TS5" async="async"></script>
+-->
+
+<script src="./Markdown cheatsheet_files/clipboard.min.js.download"></script><style id="fit-vids-style">.fluid-width-video-container{flex-grow: 1;width:100%;}.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><script type="application/javascript" src="./Markdown cheatsheet_files/main.js.download"></script><style>@import "https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700";.d-none{display:none}.d-block{display:block}.d-flex{display:-ms-flexbox!important;display:-webkit-box!important;display:flex!important}.truepush_optin_notifications{font-family:"Nunito Sans", sans-serif!important;border:none!important;font-size:14px;color:#000;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}.truepush_optin_notifications .text-center{text-align:center!important}.truepush_optin_notifications .text-right{text-align:right!important}.truepush_optin_notifications .text-left{text-align:left!important}.truepush_optin_notifications .justify-content-center{-ms-flex-pack:center!important;-webkit-box-pack:center!important;justify-content:center!important}.truepush_optin_notifications .justify-content-start{-ms-flex-pack:start!important;-webkit-box-pack:start!important;justify-content:flex-start!important}.truepush_optin_notifications .justify-content-end{-ms-flex-pack:end!important;-webkit-box-pack:end!important;justify-content:flex-end!important}.truepush_optin_notifications .color-primary{color:#4a90e2}.truepush_optin_notifications .color-link{color:#4a90e2}.truepush_optin_notifications .p-rel{position:relative}.truepush_optin_notifications .p-abs{position:absolute}.truepush_optin_notifications .m-1{margin:6px!important}.truepush_optin_notifications .m-2{margin:12px!important}.truepush_optin_notifications .m-3{margin:18px!important}.truepush_optin_notifications .m-4{margin:24px!important}.truepush_optin_notifications .m-5{margin:30px!important}.truepush_optin_notifications .mx-1{margin-left:6px!important;margin-right:6px!important}.truepush_optin_notifications .mx-2{margin-left:12px!important;margin-right:12px!important}.truepush_optin_notifications .mx-3{margin-left:18px!important;margin-right:18px!important}.truepush_optin_notifications .mx-4{margin-left:24px!important;margin-right:24px!important}.truepush_optin_notifications .mx-5{margin-left:30px!important;margin-right:30px!important}.truepush_optin_notifications .my-1{margin-top:6px!important;margin-bottom:6px!important}.truepush_optin_notifications .my-2{margin-top:12px!important;margin-bottom:12px!important}.truepush_optin_notifications .my-3{margin-top:18px!important;margin-bottom:18px!important}.truepush_optin_notifications .my-4{margin-top:24px!important;margin-bottom:24px!important}.truepush_optin_notifications .my-5{margin-top:30px!important;margin-bottom:30px!important}.truepush_optin_notifications .mt-1{margin-top:6px!important}.truepush_optin_notifications .mt-2{margin-top:12px!important}.truepush_optin_notifications .mt3{margin-top:18px!important}.truepush_optin_notifications .mt-4{margin-top:24px!important}.truepush_optin_notifications .mt-5{margin-top:30px!important}.truepush_optin_notifications .mb-1{margin-bottom:6px!important}.truepush_optin_notifications .mb-2{margin-bottom:12px!important}.truepush_optin_notifications .mb-3{margin-bottom:18px!important}.truepush_optin_notifications .mb-4{margin-bottom:24px!important}.truepush_optin_notifications .mb-5{margin-bottom:30px!important}.truepush_optin_notifications .ml-1{margin-left:6px!important}.truepush_optin_notifications .ml-2{margin-left:12px!important}.truepush_optin_notifications .ml-3{margin-left:18px!important}.truepush_optin_notifications .ml-4{margin-left:24px!important}.truepush_optin_notifications .ml-5{margin-left:30px!important}.truepush_optin_notifications .mr-1{margin-right:6px!important}.truepush_optin_notifications .mr-2{margin-right:12px!important}.truepush_optin_notifications .mr-3{margin-right:18px!important}.truepush_optin_notifications .mr-4{margin-right:24px!important}.truepush_optin_notifications .mr-5{margin-right:30px!important}.truepush_optin_notifications .p-1{padding:6px!important}.truepush_optin_notifications .p-2{padding:12px!important}.truepush_optin_notifications .p-3{padding:18px!important}.truepush_optin_notifications .p-4{padding:24px!important}.truepush_optin_notifications .p-5{padding:30px!important}.truepush_optin_notifications .px-1{padding-left:6px!important;padding-right:6px!important}.truepush_optin_notifications .px-2{padding-left:12px!important;padding-right:12px!important}.truepush_optin_notifications .px-3{padding-left:18px!important;padding-right:18px!important}.truepush_optin_notifications .px-4{padding-left:24px!important;padding-right:24px!important}.truepush_optin_notifications .px-5{padding-left:30px!important;padding-right:30px!important}.truepush_optin_notifications .py-1{padding-top:6px!important;padding-bottom:6px!important}.truepush_optin_notifications .py-2{padding-top:12px!important;padding-bottom:12px!important}.truepush_optin_notifications .py-3{padding-top:18px!important;padding-bottom:18px!important}.truepush_optin_notifications .py-4{padding-top:24px!important;padding-bottom:24px!important}.truepush_optin_notifications .py-5{padding-top:30px!important;padding-bottom:30px!important}.truepush_optin_notifications .pt-1{padding-top:6px!important}.truepush_optin_notifications .pt-2{padding-top:12px!important}.truepush_optin_notifications .pt-3{padding-top:18px!important}.truepush_optin_notifications .pt-4{padding-top:24px!important}.truepush_optin_notifications .pt-5{padding-top:30px!important}.truepush_optin_notifications .pb-1{padding-bottom:6px!important}.truepush_optin_notifications .pb-2{padding-bottom:12px!important}.truepush_optin_notifications .pb-3{padding-bottom:18px!important}.truepush_optin_notifications .pb-4{padding-bottom:24px!important}.truepush_optin_notifications .pb-5{padding-bottom:30px!important}.truepush_optin_notifications .pl-1{padding-left:6px!important}.truepush_optin_notifications .pl-2{padding-left:12px!important}.truepush_optin_notifications .pl-3{padding-left:18px!important}.truepush_optin_notifications .pl-4{padding-left:24px!important}.truepush_optin_notifications .pl-5{padding-left:30px!important}.truepush_optin_notifications .pr-1{padding-right:6px!important}.truepush_optin_notifications .pr-2{padding-right:12px!important}.truepush_optin_notifications .pr-3{padding-right:18px!important}.truepush_optin_notifications .pr-4{padding-right:24px!important}.truepush_optin_notifications .pr-5{padding-right:30px!important}.truepush_optin_notifications .xy-m{position:absolute;top:50%;left:50%;-webkit-transform:translateX(-50%) translateY(-50%);-ms-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}.truepush_optin_notifications .y-m{position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.truepush_optin_notifications .x-m{position:absolute;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.truepush_optin_notifications .truepush_overlay{width:100%;height:100%;position:fixed;background:#000;background-color:rgba(0, 0, 0, 0.3);z-index:999999;left:0;right:0;margin:auto;top:0;overflow:hidden}.truepush_optin_notifications .defaultplus_truepush{width:800px;height:220px;position:fixed;top:0;left:0;z-index:9999999999999999}.truepush_optin_notifications .defaultplus_truepush:after{content:"";width:100%;height:100%;position:absolute;left:50%;top:50%;-webkit-filter:blur(80px);filter:blur(80px);background-color:rgba(0, 0, 0, 0.4);-webkit-transform:translateX(-50%) translateY(-50%);-ms-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}.truepush_optin_notifications .defaultplus_truepush .defaultplus_box_tp{position:relative;z-index:99999999}.truepush_optin_notifications .defaultplus_truepush .defaultplus_box_tp .defaultplus_content_tp{position:absolute;top:20px;right:120px}.truepush_optin_notifications .defaultplus_truepush .defaultplus_box_tp .defaultplus_content_tp a{color:#fff!important;cursor:pointer!important;font-size:14px;font-weight:800;text-decoration:none!important;background:none;margin:0;padding:0;text-shadow:2px 2px 8px #7c7c7c;font-family:"Nunito Sans", sans-serif!important}.truepush_optin_notifications .defaultplus_truepush .defaultplus_box_tp .defaultplus_content_tp a:hover{text-decoration:underline!important}.truepush_optin_notifications .defaultplus_truepush .defaultplus_box_tp .defaultplus_content_tp a img{vertical-align:middle;margin:0 2px;width:18px}.truepush_optin_notifications .defaultplus_truepush .defaultplus_box_tp .defaultplus_content_tp span{color:#fff!important;text-decoration:underline!important}.truepush_optin_notifications .moz_defaultplus_truepush{width:960px}.truepush_optin_notifications .moz_defaultplus_truepush .defaultplus_content_tp{right:60px}.truepush_optin_notifications .opera_defaultplus_truepush .defaultplus_content_tp{right:160px}.truepush_optin_notifications .edge_defaultplus_truepush{width:100%!important;height:120px!important;bottom:0!important;left:0!important;top:auto}.truepush_optin_notifications .edge_defaultplus_truepush .defaultplus_content_tp{top:22px!important;left:22%!important}.truepush_optin_notifications .belloptin_truepush{position:fixed;right:25px;bottom:30px;z-index:999999999999!important;padding:2px;cursor:pointer}.truepush_optin_notifications .belloptin_truepush .bellcircle_optinicon{display:flex!important;display:-webkit-box!important;display:-ms-flexbox!important;-ms-flex-pack:center!important;justify-content:center!important;-ms-flex-align:center!important;align-items:center!important;text-align:center!important;-webkit-box-align:center!important;-webkit-box-pack:center!important;width:50px;height:50px;border-radius:50%;background:red;margin:0;padding:0}.truepush_optin_notifications .belloptin_truepush .bellcircle_optinicon svg{width:36px;height:36px;fill:#fff;vertical-align:sub;text-align:center;margin:0;padding:0}.truepush_optin_notifications .belloptin_truepush .tip-content{position:absolute;top:6px;right:9999px;width:200px;margin-right:83px;padding:10px;color:#fff;background:#333;-webkit-box-sizing:unset!important;box-sizing:unset!important;-webkit-box-shadow:2px 2px 5px #aaa;-moz-box-shadow:2px 2px 5px #aaa;box-shadow:2px 2px 5px #aaa;opacity:0;-webkit-transition:opacity 250ms ease-out;-moz-transition:opacity 250ms ease-out;-ms-transition:opacity 250ms ease-out;-o-transition:opacity 250ms ease-out;transition:opacity 250ms ease-out}.truepush_optin_notifications .belloptin_truepush .tip-content:before{content:"";position:absolute;top:50%;width:0;height:0;margin-left:184px;margin-top:-11px;border:10px solid transparent;border-left-color:#333}.truepush_optin_notifications .belloptin_truepush .bellcircle_optinicon:hover .tip-content{right:-20px;opacity:1}.truepush_optin_notifications .horizontalbar_truepush{position:fixed;bottom:0;width:100%;left:0;right:0;margin:0 auto;z-index:9999999}.truepush_optin_notifications .horizontalbar_truepush .bar_truepush{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:10px;background:#000;color:#fff}.truepush_optin_notifications .horizontalbar_truepush .bar_truepush .optinbar_content span{font-size:16px}.truepush_optin_notifications .horizontalbar_truepush .bar_truepush .optinbar_content button{display:inline!important;background-color:#4A90E2;color:#fff;border-width:0!important;padding:8px 12px!important;font-size:14px!important;font-weight:500;border:0;border-radius:2px;margin:0 auto!important;text-transform:none!important;font-family:"Nunito Sans", sans-serif!important}.truepush_optin_notifications .horizontalbar_truepush .bar_truepush .optinbar_content b{font-size:16px;cursor:pointer}.truepush_optin_notifications .optinbox_truepush{font-family:"Nunito Sans", sans-serif!important;position:fixed;top:0;margin:0;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);z-index:999999999999!important;text-align:center;width:100%;max-width:360px;height:-webkit-max-content;height:-moz-max-content;height:max-content;background:#ffffff;border:1px solid #f0f0f0;margin:0 auto}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection{padding:12px 10px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection h5{font-size:16px!important;font-weight:600;color:#282828!important;margin:0;line-height:1.4;text-transform:unset!important}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection p{font-size:13px;color:#7c7c7c;margin:12px 0;font-weight:500;padding:0;line-height:1.4}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection .optinbox_tpbuttons{text-align:center!important}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection .optinbox_tpbuttons button{padding:8px 26px;font-size:14px!important;font-weight:500;margin:6px;border-radius:2px;text-transform:unset!important;line-height:normal!important;letter-spacing:unset!important;font-family:"Nunito Sans", sans-serif!important}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection .optinbox_tpbuttons .tp_btn_default{background:#f2f4ff;border:1px solid #ebeefc;-webkit-box-shadow:0 0 8px 0 white;box-shadow:0 0 8px 0 white;color:#3b69ff;margin-left:0}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection .optinbox_tpbuttons .tp_btn_primary{background:#3b69ff;color:#fff;border:1px solid #3b69ff;-webkit-box-shadow:0 0 6px 0 #c0cfff;box-shadow:0 0 6px 0 #c0cfff}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection .optinbox_tpbuttons a{text-decoration:underline!important;cursor:pointer!important;font-size:12px;font-weight:500;padding:0;margin:0;color:#7c7c7c!important;font-family:"Nunito Sans", sans-serif!important}.truepush_optin_notifications .optinbox_plus_truepush{width:100%;max-width:350px;height:-webkit-max-content;height:-moz-max-content;height:max-content;margin:0 auto;background:#ffffff;border:1px solid #f0f0f0}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection{padding:10px}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_plus_media{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-align:start;-webkit-box-align:start;align-items:flex-start;text-align:left}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_plus_media .optinbox_plus_image{flex:0 0 60px;-webkit-box-flex:0;-ms-flex:0 0 60px;height:60px;margin-right:16px;overflow:hidden}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_plus_media .optinbox_plus_image img{max-width:100%;width:100%;border-radius:2px}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_plus_media .optinbox_plus_media_body{-ms-flex:1;-webkit-box-flex:1;flex:1}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_plus_media .optinbox_plus_media_body p{margin:0;font-size:15px;color:#484848;line-height:1.4;font-weight:600;font-family:"Nunito Sans", sans-serif!important;word-break:break-word}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_plus_media .optinbox_plus_media_body .subtext{font-size:13px!important;color:#686868!important;font-weight:400!important;padding-top:3px;font-family:"Nunito Sans", sans-serif!important;word-break:break-word}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_tpbuttons button{padding:8px 26px;font-size:14px;font-weight:500;margin:5px;border-radius:2px;font-family:"Nunito Sans", sans-serif!important}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_tpbuttons .tp_btn_default{background:#f2f4ff;border:1px solid #ebeefc;-webkit-box-shadow:0 0 8px 0 white;box-shadow:0 0 8px 0 white;color:#3b69ff;margin-left:0}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_tpbuttons .tp_btn_primary{background:#3b69ff;color:#fff;border:1px solid #3b69ff;-webkit-box-shadow:0 0 6px 0 #c0cfff;box-shadow:0 0 6px 0 #c0cfff}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_tpbuttons a{text-decoration:underline!important;cursor:pointer!important;font-size:12px;font-weight:500;padding:0;margin:0;color:#7c7c7c;font-family:"Nunito Sans", sans-serif!important}iframe{border:0;background:none;-webkit-box-shadow:none;box-shadow:none}.iframe_optinbell_tp{width:62px;height:62px;position:fixed;bottom:20px;right:30px;z-index:999999999}.iframe_optin_notifications .belloptin_truepush{right:50%!important;bottom:50%!important;-webkit-transform:translateX(50%) translateY(-50%);-ms-transform:translateX(50%) translateY(-50%);transform:translateX(50%) translateY(50%)}.iframe_optinbar_tp{position:fixed;width:100%;bottom:0;left:0;right:0;margin:0 auto;height:50px;z-index:9999999}.iframe_optinbox_tp{position:fixed;max-width:400px;width:100%;padding:0 5px;height:180px;top:0;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);z-index:9999999}.optinbox_truepush_iframe{width:100%}.iframe_optinboxplus_tp{max-width:400px;width:100%;top:0;height:160px;position:fixed;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);z-index:9999999}.optinboxplus_truepush_iframe{width:100%}.iframe_optin_notifications .optinbox_truepush_iframe{top:0!important;bottom:auto!important}.iframe_optin_notifications .optinboxplus_truepush_iframe{top:0!important;bottom:auto!important}.option-safari-background{position:fixed;top:0;left:0;z-index:999999;display:block;width:100%;height:100%;overflow:hidden;outline:0;background:#000;opacity:.7}.option-safari-background .safari-dialog{max-width:100%;margin:1.75rem auto}.option-safari-background .safari-dialog{position:relative;width:auto;margin:.5rem;pointer-events:none;z-index:999999!important}.option-safari-background .safari-content{position:absolute;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;max-width:400px;pointer-events:auto;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0, 0, 0, 0.2);border-radius:.3rem;outline:0}.option-safari-background .safari-header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:1rem 1rem;border-top-left-radius:calc(.3rem - 1px);border-top-right-radius:calc(.3rem - 1px)}.option-safari-background .safari-body{position:relative;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;padding:1rem;padding-top:0}.option-safari-background .safari-footer{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;padding:.75rem;border-top:1px solid #dee2e6;border-bottom-right-radius:calc(.3rem - 1px);border-bottom-left-radius:calc(.3rem - 1px)}.option-safari-background .safari-title{font-size:20px;text-align:right}.option-safari-background .safari-icons{display:-webkit-box;display:-ms-flexbox;display:flex;background:#c6c6c6;width:120px;margin-top:7px;padding:5px;border-bottom-left-radius:20px;border-top-left-radius:20px;background-image:-webkit-gradient(linear, left top, right top, from(#c6c6c6), color-stop(#c6c6c6), to(white));background-image:-webkit-linear-gradient(left, #c6c6c6, #c6c6c6, white);background-image:-o-linear-gradient(left, #c6c6c6, #c6c6c6, white);background-image:linear-gradient(to right, #c6c6c6, #c6c6c6, white)}.option-safari-background .bell{font-size:1.5rem;font-weight:700;line-height:.6!important;color:#000;text-shadow:0 1px 0 #fff;padding:1px 0px 4px 0px;padding-left:8px}.option-safari-background .bell1{font-size:1.5rem;font-weight:700;margin-right:7px;line-height:.6!important;border:0;outline:none;color:#000;text-shadow:0 1px 0 #fff}.option-safari-background .bell i{font-size:16px}.option-safari-background .bell1 i{font-size:16px;font-weight:bold;padding-left:15px}.option-safari-background span.safari-arrow{position:absolute;left:16%;top:47px;-webkit-transform:translateY(6%);-ms-transform:translateY(6%);transform:translateY(6%)}.option-safari-background .safari-arrow img{width:49px!important}.option-safari-background .safari-body p{text-align:right}.option-safari-background .safari-footersection{display:-webkit-box;display:-ms-flexbox;display:flex;position:absolute;bottom:0;padding:10px 20px;background-color:#fff;width:100%;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.option-safari-background .safari-footersection i{font-size:24px!important;color:#0678ff!important}.option-safari-background .safari-footersection h4{color:#000;font-weight:500;font-size:14px!important;padding-left:15px!important;padding-top:1px}.option-safari-background .safari-footersection .notification{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}.option-safari-background .footer-icon i{font-size:24px!important;margin-left:7px;margin-top:5px;font-size:18px!important;color:#575757!important}.option-safari-background .safari-footersection .footer-text{color:#0678ff!important}.option-safari-background .footer-icon{width:28px!important;height:28px;border-radius:20px;margin-top:-1px}.option-safari-background .footer-icon:hover{width:28px!important;height:28px;border-radius:20px;background:darkgrey;margin-top:-1px;color:#fff}.option-safari-backgroung-left{position:fixed;top:0;left:0;z-index:999999;display:block;width:100%;height:100%;overflow:hidden;outline:0;background:#000;opacity:.7}.option-safari-backgroung-left .safari-dialog{max-width:100%;margin:1.75rem auto}.option-safari-backgroung-left .safari-dialog{position:relative;width:auto;margin:.5rem;pointer-events:none;z-index:999999!important}.option-safari-backgroung-left .safari-content{position:absolute;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;right:0;max-width:400px;pointer-events:auto;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0, 0, 0, 0.2);border-radius:.3rem;outline:0}.option-safari-backgroung-left .safari-header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:1rem 1rem;border-top-left-radius:calc(.3rem - 1px);border-top-right-radius:calc(.3rem - 1px)}.option-safari-backgroung-left .safari-body{position:relative;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;padding:1rem;padding-top:0}.option-safari-backgroung-left .safari-footer{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;padding:.75rem;border-top:1px solid #dee2e6;border-bottom-right-radius:calc(.3rem - 1px);border-bottom-left-radius:calc(.3rem - 1px)}.option-safari-backgroung-left .safari-title{font-size:20px}.option-safari-backgroung-left .safari-icons{background:#c6c6c6;width:120px;padding:5px;margin-top:7px;border-bottom-right-radius:20px;border-top-right-radius:20px;background-image:-webkit-gradient(linear, left top, right top, from(white), color-stop(#c6c6c6), to(#c6c6c6));background-image:-webkit-linear-gradient(left, white, #c6c6c6, #c6c6c6);background-image:-o-linear-gradient(left, white, #c6c6c6, #c6c6c6);background-image:linear-gradient(to right, white, #c6c6c6, #c6c6c6)}.option-safari-backgroung-left .bell{float:right;font-size:1.5rem;font-weight:700;padding:1px 0px 4px 0px;line-height:.5!important;color:#000;text-shadow:0 1px 0 #fff}.option-safari-backgroung-left .bell1{float:right;background-color:#c6c6c6;font-size:1.5rem;font-weight:700;margin-right:7px;line-height:.5!important;border:0;outline:none;color:#000;text-shadow:0 1px 0 #fff}.option-safari-backgroung-left .bell i{font-size:16px;padding-right:20px}.option-safari-backgroung-left .bell1 i{font-size:16px;font-weight:bold;padding-right:5px;padding-top:2px}.option-safari-backgroung-left span.safari-arrow{position:absolute;left:72%;top:46px;-webkit-transform:translateY(6%);-ms-transform:translateY(6%);transform:translateY(6%)}.option-safari-backgroung-left .safari-arrow img{width:49px!important}.option-safari-backgroung-left .safari-footersection .footer-text{color:#0678ff!important}.option-safari-backgroung-left .footer-icon{width:28px!important;height:28px;border-radius:20px;margin-top:-1px}.option-safari-backgroung-left .footer-icon:hover{width:28px!important;height:28px;border-radius:20px;background:darkgrey;margin-top:-1px;color:#fff}@media screen and (max-width:574.98px){.truepush_optin_notifications .defaultplus_truepush{width:100%;height:auto;bottom:0;top:auto;left:0}.truepush_optin_notifications .defaultplus_truepush .defaultplus_box_tp .defaultplus_content_tp{top:auto;left:40%;bottom:20px;-webkit-transform:translateX(-40%);-ms-transform:translateX(-40%);transform:translateX(-40%);right:auto}.truepush_optin_notifications .horizontalbar_truepush .bar_truepush .optinbar_content span{display:block;padding:0 0 12px 0!important}.truepush_optin_notifications .optinbox_truepush{top:auto;bottom:0}.iframe_optinbox_tp{top:auto;bottom:0;max-width:360px}.iframe_optinboxplus_tp{top:auto;bottom:0;max-width:360px}}@media screen and (max-width:398.98px){.truepush_optin_notifications .optinbox_truepush{max-width:98%}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection{padding:12px 8px}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection h5{font-size:14px;font-weight:600}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection p{font-size:12px}.iframe_optin_notifications .optinbox_truepush_iframe{top:auto!important;bottom:0!important}.iframe_optin_notifications .optinboxplus_truepush_iframe{top:auto!important;bottom:0!important}}@media screen and (min-width:320px) and (max-width:767px){.option-safari-background .safari-content{width:100%;max-width:270px}.option-safari-background .safari-icons{margin-top:4px!important}.option-safari-background .bell1 i,.option-safari-background .bell i{font-weight:bold!important;font-size:10px}.option-safari-background .bell1,.option-safari-background .bell{padding:1px 0px 3px 0px;line-height:.1!important}.option-safari-background .safari-title{font-size:14px}.option-safari-background .safari-body p{font-size:12px!important;margin-bottom:0rem}.option-safari-background .safari-header{padding-bottom:5px!important}.option-safari-background span.safari-arrow{left:18%;top:37px}.option-safari-background .safari-arrow img{width:25px!important}.option-safari-background .bell1 i{padding-left:10px}.option-safari-backgroung-left .bell i{padding-right:12px!important}.option-safari-backgroung-left .safari-content{width:100%;max-width:270px}.option-safari-backgroung-left .safari-icons{padding:6px;margin-top:4px!important}.option-safari-backgroung-left .bell1 i,.option-safari-backgroung-left .bell i{font-weight:bold!important;font-size:10px}.option-safari-backgroung-left .bell1,.option-safari-backgroung-left .bell{line-height:.1!important}.option-safari-backgroung-left .safari-title{font-size:14px}.option-safari-backgroung-left .safari-body p{font-size:12px!important;margin-bottom:0rem}.option-safari-backgroung-left .safari-header{padding-bottom:5px!important}.option-safari-backgroung-left span.safari-arrow{left:71%;top:38px}.option-safari-backgroung-left .safari-arrow img{width:25px!important}}</style></head>
+<body class="post-template tag-software-engineering tag-cheatsheet tag-markdown tag-guide"><div id="nav_toggle" class="navbar_collapse navigation_page">
+  <div id="navbar_close">×</div>
+  <a href="http://iq.opengenus.org/">Home</a>
+  <a href="http://discourse.opengenus.org/">Discussions</a>
+  <a href="http://iq.opengenus.org/guide-to-writing-a-note-at-opengenus-iq/">Write at Opengenus IQ</a>
+</div>
+
+
+
+  <div id="search_page" class="search_page search_page_hide">
+    <div class="search_page_close search_toggle">×</div>
+    <div class="search_page_body">
+      <div id="site-search" style="display:none;" class="search_form">
+        <input class="typeahead search_form_input" type="text" placeholder="Search">
+      </div>
+    </div>
+  </div>
+  <div class="site-wrapper">
+
+    
+
+<header class="site-header outer">
+  <div class="inner">
+    <nav class="navbar">
+  <div class="burger_menu">
+    <label for="burgertoggle">☰</label>
+    <input type="checkbox" id="burgertoggle">
+
+  </div>
+
+
+
+
+ <div class="navbar-left">
+            <ul class="nav" role="menu">
+    <li class="nav-join-our-internship-" role="menuitem"><a href="https://discourse.opengenus.org/t/internship-guidelines-at-opengenus/2335/">Join our Internship 🎓</a></li>
+    <li class="nav-50-linked-list-problems" role="menuitem"><a href="https://iq.opengenus.org/list-of-linked-list-problems/">50+ Linked List Problems</a></li>
+    <li class="nav-50-array-problems" role="menuitem"><a href="https://iq.opengenus.org/list-of-array-problems/">50+ Array Problems</a></li>
+    <li class="nav-one-liner" role="menuitem"><a href="https://iq.opengenus.org/one/">One Liner</a></li>
+    <li class="nav-50-binary-tree-problems" role="menuitem"><a href="https://iq.opengenus.org/list-of-binary-tree-problems/">50+ Binary Tree problems</a></li>
+    <li class="nav-7daysofcode" role="menuitem"><a href="https://www.amazon.com/days-Dynamic-Programming-7daysOfAlgo-Book-ebook/dp/B08GKXDWQW/">#7daysOfCode</a></li>
+    <li class="nav-c-interview-questions" role="menuitem"><a href="https://www.amazon.com/gp/product/B08MT9Y5S6/">C Interview questions</a></li>
+    <li class="nav-linux-" role="menuitem"><a href="https://www.amazon.com/dp/B08FCYKGZY/">Linux 💽</a></li>
+    <li class="nav--data-structures" role="menuitem"><a href="https://www.amazon.com/dp/B08F2TDC7R/">🔊 Data Structures</a></li>
+    <li class="nav-graph-algorithms" role="menuitem"><a href="https://www.amazon.com/dp/B089SB5YCX">Graph Algorithms</a></li>
+    <li class="nav-dynamic-programming-" role="menuitem"><a href="https://www.amazon.com/gp/product/B087SV4WYJ/">Dynamic Programming 💑</a></li>
+    <li class="nav-greedy-algo-" role="menuitem"><a href="https://www.amazon.com/Greedy-Algorithms-before-Coding-Interview-ebook/dp/B0876JFTWY">Greedy Algo  📔</a></li>
+    <li class="nav-algo-book-" role="menuitem"><a href="https://www.amazon.com/Problems-before-your-coding-interview-ebook/dp/B0868TND68/">Algo Book 🧠</a></li>
+    <li class="nav-string-algo-" role="menuitem"><a href="https://www.amazon.com/gp/product/B088FZV5FV">String Algo 🧬</a></li>
+    <li class="nav-home" role="menuitem"><a href="https://iq.opengenus.org/">Home</a></li>
+</ul>
+
+
+    </div>
+
+    <div class="navbar-right">
+      <!--  <div class="social-links"> -->
+          <a class="search_button">
+            <i class="fa fa-search search_toggle" style="cursor:pointer;"></i>
+          </a>
+        <!--    
+                <a class="social-link social-link-fb" href="https://www.facebook.com/opengenus" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+</a>
+                <a class="social-link social-link-tw" href="https://twitter.com/OpenGenus" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+</a>
+        </div>
+    <      -->
+            <a class="rss-button" href="https://feedly.com/i/subscription/feed/https://iq.opengenus.org/rss/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="6.18" cy="17.82" r="2.18"></circle><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"></path></svg>
+</a>
+      <!--   -->
+    </div>
+
+</nav>
+  </div>
+</header>
+
+<!-- GLOBAL MESSAGE (disabled)
+<script type="text/javascript" src="/assets/js/message.js?v=0ac4978b4f"></script>
+<script type="text/javascript">
+  function generateMSG(tag) {
+    if (msg_contents['display'] == 0) {
+      var elem = document.querySelector('#global_message');
+      elem.style.display = 'none';
+      return;
+    }
+    if (msg_contents['announce'] == 0) {
+      if (tag in msg_contents) {
+        msg = msg_contents[tag];
+      } else {
+        msg = msg_contents['message'];
+      }
+    } else {
+      msg = msg_contents['global'];
+    }
+    num = Math.floor(Math.random() * msg.length);
+    msg = msg[num];
+    var text = msg['text'];
+    var link = msg['link'];
+    var msg_box = document.getElementById('global_message');
+    var a = document.getElementById('global_message_link');
+    a.href = link;
+    a.innerHTML = text;
+    msg_box.onclick = function () {
+      window.open(link, "_blank");
+    };
+  }
+</script>
+-->
+
+
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+
+    <article class="post-full post tag-software-engineering tag-cheatsheet tag-markdown tag-guide no-image">
+
+      <header class="post-full-header">
+
+        <h1 class="post-full-title" style="color:#292929; font-size:30px ; ">Markdown cheatsheet</h1>
+
+        <!--     GLOBAL MESSAGE (disabled)    -->
+        <!--
+        <div id="global_message"
+          style="cursor:pointer; background:rgb(181, 222, 250); padding-top:20px; padding-bottom:20px;">
+          <a id='global_message_link' target="_blank" style="font-color: #a0a1a1; "></a>
+          <p id="hidden" hidden>Software Engineering</p>
+          <script>generateMSG(document.getElementById('hidden').innerText);</script>
+        </div>
+        -->
+        
+        <!-- Bluehost Link -->
+        <!--
+        <p style="text-align: center;"><a href="https://bluehost.sjv.io/P0jXyQ" target="_blank">Get FREE domain for 1st year and build your brand new site</a></p>
+        -->
+      
+        <!--
+        <div style="text-align: center;">
+        <a href="https://www.bluehost.com/track/openq/site" target="_blank"> <img border="0" src="https://bluehost-cdn.com/media/partner/images/openq/728x90/728x90BW.png"> </a>
+        </div>
+        -->
+
+        <div class="upper_taglist">
+          <h4 id="text" class="less">
+            <div id="taglist">
+              <a target="_blank" href="https://iq.opengenus.org/tag/software-engineering/" title="Software Engineering" class="tag_item">Software Engineering</a>
+              <a target="_blank" href="https://iq.opengenus.org/tag/cheatsheet/" title="cheatsheet" class="tag_item">cheatsheet</a>
+              <a target="_blank" href="https://iq.opengenus.org/tag/markdown/" title="markdown" class="tag_item">markdown</a>
+              <a target="_blank" href="https://iq.opengenus.org/tag/guide/" title="guide" class="tag_item">guide</a>
+            </div>
+          </h4>
+        </div>
+
+
+        <button id="more" class="more-tags-button">More</button>
+        <button id="less" class="more-tags-button">Less</button>
+
+
+      </header>
+
+
+      <button id="scrollBtn" title="Go to top" style="display: none;">Up</button>
+
+
+      <!-- Amazon.in general link -->
+      <!--
+      <script type="text/javascript" language="javascript">
+		var aax_size='728x90';
+		var aax_pubname = 'opengenus06-21';
+		var aax_src='302';
+	  </script>
+
+	  <script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
+	  -->
+
+      <section class="post-full-content">
+
+        <a href="https://amzn.to/3bZLnc1" target="_blank">
+        <picture>
+          <source media="(max-width: 400px)" srcset="/assets/images/binary-tree-small.png">
+          <img src="./Markdown cheatsheet_files/binary-tree.png" style="width:100%;" border="0" alt="Binary Tree Problems books">
+        </picture>
+        </a>
+
+      	<!--
+        <p style="text-align: center;"><a href="https://amzn.to/2O9fHri" target="_blank">Sign up for FREE 1 month of Kindle and read all our books for free.</a></p>
+        -->
+
+        <p style="text-align: center;"><a href="https://bluehost.sjv.io/P0jXyQ" target="_blank">Get FREE domain for 1st year and build your brand new site</a></p>
+
+        <script async="" src="./Markdown cheatsheet_files/f.txt"></script>
+        <!-- top ad (og iq) -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6329206778297580" data-ad-slot="3019138753" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+        <div class="kg-card-markdown"><div></div>
+<p id="time">Reading time: 25 minutes</p>
+<div id="summary_discourse">
+<p>Markdown is a simple lightweight markup language which is widely used as a formatting language on the web. Few points that make markdown a wonderful option are:</p>
+<ul>
+<li>Simple text format hence, easy to learn and use</li>
+<li>convertible to various formats</li>
+</ul>
+</div>
+<p>In short, markdown data is converted to <strong>HTML</strong> data using the markdown processor which is in turn rendered by the browser. Markdown files have <mark><strong>.md</strong></mark> extension.</p>
+<a href="./Markdown cheatsheet_files/markdown.jpg" data-lightbox="post title"> 
+   <img width="600px" src="./Markdown cheatsheet_files/markdown.jpg" alt="markdown flow"> 
+</a>
+<p>In this article, we will walk you through the basic Markdown elements so that you can use them smoothly anywhere anytime.</p>
+<h3 id="heading">Heading</h3>
+<p>For heading of various sizes, use the following:</p>
+<pre><code class="hljs shell"><span class="hljs-meta">
+#</span><span class="bash"> heading1</span>
+<span class="hljs-meta">
+#</span><span class="bash"><span class="hljs-comment"># heading2</span></span>
+<span class="hljs-meta">
+#</span><span class="bash"><span class="hljs-comment">## heading3</span></span>
+<span class="hljs-meta">
+#</span><span class="bash"><span class="hljs-comment">### heading4</span></span>
+</code></pre>
+<p>The above markdown is rendered as follows:</p>
+<h1 id="heading1">heading1</h1>
+<h2 id="heading2">heading2</h2>
+<h3 id="heading3">heading3</h3>
+<h4 id="heading4">heading4</h4>
+<hr>
+<h3 id="textformatting">Text formatting</h3>
+<h4 id="boldtext">Bold text</h4>
+<p>To bold a text, wrap it in <code>**</code> from both sides. For example, the following markdown:</p><div id="262466033"></div><br>
+<pre><code class="hljs markdown">I love <span class="hljs-strong">**OpenGenus**</span></code></pre>
+<p>is rendered as:</p>
+<p>I love <strong>OpenGenus</strong></p>
+<h4 id="italics">Italics</h4>
+<p>To italicize a text, wrap it in <code>*</code> from both sides. For example, the following markdown:</p>
+<pre><code class="hljs markdown">I love <span class="hljs-emphasis">*OpenGenus*</span></code></pre>
+<p>is rendered as:</p>
+<p>I love <em>OpenGenus</em></p>
+<h4 id="strikethrough">Strikethrough</h4>
+<p>To strikethrough a text, wrap it in <code>~~</code> from both sides. For example, the following markdown:</p>
+<pre><code class="hljs nginx"><span class="hljs-attribute">I</span> ~~like~<span class="hljs-regexp">~ love</span> OpenGenus</code></pre>
+<p>is rendered as:</p>
+<p>I <s>like</s> love OpenGenus</p>
+<h4 id="highlight">Highlight</h4>
+<p>To highlight a text, wrap it in <code>==</code> from both sides. For example, the following markdown:</p>
+<pre><code class="hljs nginx"><span class="hljs-attribute">I</span> love ==OpenGenus==</code></pre>
+<p>is rendered as:</p>
+<p>I love <mark>OpenGenus</mark></p>
+<br>
+<h3 id="quote">Quote</h3>
+<p>To quote a text, use <code>&gt;</code> infront of the text. For example, the following markdown:</p>
+<pre><code class="hljs shell"><span class="hljs-meta">&gt;</span><span class="bash"> I love ==OpenGenus==</span></code></pre>
+<p>is rendered as:</p>
+<blockquote>
+<p>I love <mark>OpenGenus</mark></p>
+</blockquote>
+<h3 id="list">List</h3>
+<p>To define an unordered list, use the following markdown:</p>
+<pre><code class="hljs markdown">
+<span class="hljs-bullet">* </span>data 1
+<span class="hljs-bullet">* </span>data 2
+<span class="hljs-bullet">* </span>data 3
+</code></pre>
+<p>The above markdown is rendered as follows:</p>
+<ul>
+<li>data 1</li>
+<li>data 2</li>
+<li>data 3</li>
+</ul>
+<p>To define an ordered list, use the following markdown:</p>
+<pre><code class="hljs markdown">
+<span class="hljs-bullet">1. </span>data 1
+<span class="hljs-bullet">2. </span>data 2
+<span class="hljs-bullet">3. </span>data 3
+</code></pre>
+<p>The above markdown is rendered as follows:</p>
+<ol>
+<li>data 1</li>
+<li>data 2</li>
+<li>data 3</li>
+</ol>
+<p>To define a sub list, use the following markdown:</p>
+<pre><code class="hljs markdown">
+<span class="hljs-bullet">* </span>data 1
+<span class="hljs-bullet">* </span>data 2
+<span class="hljs-code">    * data 21</span>
+<span class="hljs-code">    * data 22</span>
+<span class="hljs-bullet">* </span>data 3
+</code></pre>
+<p>The above markdown is rendered as follows:</p>
+<ul>
+<li>data 1</li>
+<li>data 2
+<ul>
+<li>data 21</li>
+<li>data 22</li>
+</ul>
+</li>
+<li>data 3</li>
+</ul>
+<br>
+<h3 id="table">Table</h3>
+<p>To define a simple table in markdown, use the following:</p>
+<pre><code class="hljs ruby">
+<span class="hljs-params">| heading1 |</span> heading2 <span class="hljs-params">| heading3 |</span>
+<span class="hljs-params">|:--------:|</span><span class="hljs-symbol">:--------</span><span class="hljs-symbol">:|</span><span class="hljs-symbol">:--------</span><span class="hljs-symbol">:|</span>
+<span class="hljs-params">| data11   |</span> data <span class="hljs-number">12</span>  <span class="hljs-params">| data 13  |</span>
+<span class="hljs-params">| data 21  |</span> data <span class="hljs-number">2</span> <span class="hljs-number">2</span> <span class="hljs-params">| data 23  |</span>
+</code></pre>
+<p>The above markdown is rendered as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">heading1</th>
+<th style="text-align:center">heading2</th>
+<th style="text-align:center">heading3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">data11</td>
+<td style="text-align:center">data 12</td>
+<td style="text-align:center">data 13</td>
+</tr>
+<tr>
+<td style="text-align:center">data 21</td>
+<td style="text-align:center">data 2 2</td>
+<td style="text-align:center">data 23</td>
+</tr>
+</tbody>
+</table>
+<h3 id="links">Links</h3>
+<p>We can define a link in Markdown as follows:</p>
+<pre><code class="hljs markdown">[<span class="hljs-string">Learn at OpenGenus IQ</span>](<span class="hljs-link">https://iq.opengenus.org</span>)</code></pre>
+<p>The above markdown is rendered as:</p>
+<p><a href="https://iq.opengenus.org/">Learn at OpenGenus IQ</a></p>
+<h3 id="images">Images</h3>
+<p>You can add images with a path <mark><strong><code>https://iq.opengenus.org/content/images/2019/03/opengenus-1.png</code></strong></mark> as:</p>
+<pre><code class="hljs ruby">
+![](<span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/iq.opengenus.org/content</span><span class="hljs-regexp">/images/</span><span class="hljs-number">2019</span>/<span class="hljs-number">03</span>/opengenus-<span class="hljs-number">1</span>.png)
+</code></pre>
+<p>The above image is rendered as:</p>
+<p><img src="./Markdown cheatsheet_files/opengenus-1.png" alt="opengenus-1"></p>
+<h3 id="code">Code</h3>
+<p>To add code in Markdown, use the following:</p>
+<pre><code class="hljs javascript">
+<span class="hljs-string">``</span><span class="hljs-string">`python
+print ("opengenus")
+`</span><span class="hljs-string">``</span>
+</code></pre>
+<p>It will be rendered as:</p>
+<pre class="language-python code-toolbar"><code class="language-python hljs"><span class="token keyword"><span class="hljs-keyword">print</span></span> <span class="token punctuation">(</span><span class="token string"><span class="hljs-string">"opengenus"</span></span><span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><span>Python</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<h3 id="mixinghtml">Mixing HTML</h3>
+<p>You can add HTML elements in Markdown and it will work smoothly</p>
+<pre><code class="hljs markdown">[<span class="hljs-string">Learn at </span><strong><span class="hljs-string">OpenGenus</span></strong><span class="hljs-string"> IQ</span>](<span class="hljs-link">https://iq.opengenus.org</span>)</code></pre>
+<p><a href="https://iq.opengenus.org/">Learn at <strong>OpenGenus</strong> IQ</a></p>
+<p>On adding markdown elements in HTML, you will see that some elements are rendered correctly but not all.</p>
+<pre><code class="hljs javascript">&lt;a href=<span class="hljs-string">"https://iq.opengenus.org"</span>&gt;Learn at **OpenGenus**<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span>
+</code></pre>
+<p><a href="https://iq.opengenus.org/">Learn at <strong>OpenGenus</strong></a></p>
+<p>So, you can use a mix of HTML and Markdown in a single document but you may avoid mixing HTML and Markdown in a single DOM element.</p>
+</div>
+
+        <script async="" src="./Markdown cheatsheet_files/f(1).txt" crossorigin="anonymous"></script>
+        <!-- after content iq.opengenus.org -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6329206778297580" data-ad-slot="2677909004" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+      </section>
+
+        <div style="text-align: center;">
+        <a href="https://www.bluehost.com/track/openq/site" target="_blank"> <img border="0" src="./Markdown cheatsheet_files/728x90BW.png"> </a>
+        </div>
+
+      	<!-- mgid -->
+        <!--
+      	<div id="M697970ScriptRootC1108559">
+		    </div>
+		    <script src="https://jsc.mgid.com/i/q/iq.opengenus.org.1108559.js" async></script>
+        -->
+			
+      <!-- General Amazon.com product link -->
+
+      <div id="amzn-assoc-ad-b040e7d9-c96c-4931-9fa1-929bffc448c2"></div><script async="" src="./Markdown cheatsheet_files/onejs"></script>
+
+  </article></div>
+
+  <!-- shuffle button -->
+
+  <footer>
+    <div class="post-full-footer">
+
+      <section class="author-card">
+        <img class="author-profile-image" src="./Markdown cheatsheet_files/logo_small.png" alt="OpenGenus Foundation">
+
+        <section class="author-card-content">
+          <h4 class="author-card-name"><a href="https://iq.opengenus.org/author/opengenus/">OpenGenus Foundation</a></h4>
+          <p>The official account of OpenGenus IQ backed by GitHub, DigitalOcean and Discourse</p>
+        </section>
+      </section>
+
+      <div class="post-full-footer-right">
+        <a class="author-card-button" href="https://iq.opengenus.org/author/opengenus/">Read More</a>
+      </div>
+
+
+    </div>
+
+    <!--
+    <style>
+      	.fa-heart-o {
+		  color: red;
+		  cursor: pointer;
+		}
+		.fa-heart {
+		  color: red;
+		  cursor: pointer;
+		}
+      </style>
+      <script type="text/javascript" src="https://use.fontawesome.com/0206006232.js"></script>
+      <p style="font-size:30px; text-align:center">Vote for OpenGenus Foundation for <a href="https://iq.opengenus.org/vote-writer-people-choice/">Top Writers 2021</a>: 
+			<span id = heart><i class="fa fa-heart-o" aria-hidden="true" ></i> </span>
+	  </p>
+    -->
+
+
+    <div class="Authors_list">
+    <p>Improved &amp; Reviewed by:</p><br>
+    </div>
+
+    <!-- footer tag list disabled
+    <h4>
+
+      <div class="taglabel">
+
+        <h4><i class="fa fa-tag"></i> Tags</h4>
+      </div>
+      <div class="taglist">
+
+        <a target="_blank" href="/tag/software-engineering/" title="Software Engineering" class="tag_item">Software Engineering</a>
+        <a target="_blank" href="/tag/cheatsheet/" title="cheatsheet" class="tag_item">cheatsheet</a>
+        <a target="_blank" href="/tag/markdown/" title="markdown" class="tag_item">markdown</a>
+        <a target="_blank" href="/tag/guide/" title="guide" class="tag_item">guide</a>
+
+      </div>
+      </li>
+    </h4>
+    -->
+
+
+  </footer>
+
+  <!--
+  <div id='discourse-comments'></div>
+  -->
+  
+  
+
+  </main></div>
+
+
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">
+      <article class="read-next-card">
+        <header class="read-next-card-header">
+          <small class="read-next-card-header-sitetitle">— OpenGenus IQ: Computing Expertise &amp; Legacy —</small>
+          <h3 class="read-next-card-header-title"><a href="https://iq.opengenus.org/tag/software-engineering/">Software Engineering</a></h3>
+        </header>
+        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"></path></svg>
+</div>
+        <div class="read-next-card-content">
+          <ul>
+            <li><a href="https://iq.opengenus.org/questions-on-tensorflow/">Questions on TensorFlow (with Answers)</a></li>
+            <li><a href="https://iq.opengenus.org/graphql-api-in-django/">GraphQL API in Django with CRUD operations</a></li>
+            <li><a href="https://iq.opengenus.org/crud-application-with-django/">Simple CRUD Application with Django Rest Framework</a></li>
+          </ul>
+        </div>
+        <footer class="read-next-card-footer">
+          <a href="https://iq.opengenus.org/tag/software-engineering/">See all 753 posts
+            →</a>
+        </footer>
+      </article>
+
+      <article class="post-card post tag-software-engineering tag-c tag-loop tag-for-loop no-image">
+    <div class="post-card-content">
+        <a class="post-card-content-link" href="https://iq.opengenus.org/for-loop-c/">
+            <header class="post-card-header">
+                    <span class="post-card-tags">Software Engineering</span>
+                <h2 class="post_card_title">for loop in C</h2>
+            </header>
+            <section class="post_card_excerpt">
+                <p>Loop is a programming concept which is natively supported by C. Loops are used to repeat a particular coding task where each repetition follows a particular pattern which can be incorporated in a code. Example of such a task is printing integers from 1 to 10.</p>
+            </section>
+        </a>
+        <footer class="post-card-meta">
+                <img class="author-profile-image" src="./Markdown cheatsheet_files/harshita.jpeg" alt="Harshita Sahai">
+            <span class="post-card-author"><a href="https://iq.opengenus.org/author/harshita/">Harshita Sahai</a></span>
+        </footer>
+    </div>
+</article>
+
+      <article class="post-card post tag-software-engineering tag-c tag-data-type no-image">
+    <div class="post-card-content">
+        <a class="post-card-content-link" href="https://iq.opengenus.org/integer-datatype-in-c/">
+            <header class="post-card-header">
+                    <span class="post-card-tags">Software Engineering</span>
+                <h2 class="post_card_title">Integer datatype in C: int, short, long and long long</h2>
+            </header>
+            <section class="post_card_excerpt">
+                <p>In C programming language, integer data is represented by its own in-built datatype known as int. It has several variants which includes int, long, short and long long along with signed and unsigned variants The size of int is 4 bytes and range is -2147483648 to 214748364 long long is of 16 bytes</p>
+            </section>
+        </a>
+        <footer class="post-card-meta">
+                <img class="author-profile-image" src="./Markdown cheatsheet_files/logo_small.png" alt="OpenGenus Foundation">
+            <span class="post-card-author"><a href="https://iq.opengenus.org/author/opengenus/">OpenGenus Foundation</a></span>
+        </footer>
+    </div>
+</article>
+
+    </div>
+  </div>
+
+</aside>
+
+
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="https://iq.opengenus.org/">
+                <img src="./Markdown cheatsheet_files/sq_logo.png" alt="OpenGenus IQ: Computing Expertise &amp; Legacy icon">
+            <span>OpenGenus IQ: Computing Expertise &amp; Legacy</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">—</span>
+    <div class="floating-header-title">Markdown cheatsheet</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"></path>
+</svg>
+</div>
+            <!-- Twitter-->
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=You%20will%20love%20this%20article%20on%20Markdown%20cheatsheet&amp;url=https://iq.opengenus.org/markdown-cheatsheet/" onclick="window.open(this.href, &#39;share-twitter&#39;, &#39;width=550,height=235&#39;);return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"></path></svg>
+        </a>
+            <!-- Facebook-->
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://iq.opengenus.org/markdown-cheatsheet/" onclick="window.open(this.href, &#39;share-facebook&#39;,&#39;width=580,height=296&#39;);return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
+        </a>
+        <!-- LinkedIn -->
+        <a class="floating-header-share-fb" style="background: #0077b5;" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://iq.opengenus.org/markdown-cheatsheet/&amp;title=Markdown%20cheatsheet" onclick="window.open(this.href, &#39;share-facebook&#39;,&#39;width=580,height=296&#39;);return false;">
+            <i class="fa fa-linkedin" style="transform:scale(1.3);"></i>
+        </a>
+    </div>
+    <progress class="progress" value="0" max="8189">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+    <footer class="site-footer outer">
+      <div class="site-footer-content inner">
+        <section class="copyright"><a href="https://iq.opengenus.org/">OpenGenus IQ</a> © 2021 All rights
+          reserved ™ [email: <a href="mailto:team@opengenus.org">team@opengenus.org</a>]</section>
+        <nav class="site-footer-nav">
+          <a href="https://iq.opengenus.org/">Top Posts</a>
+          <a href="https://www.linkedin.com/company/opengenus" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://twitter.com/OpenGenus" target="_blank" rel="noopener">Twitter</a>
+        </nav>
+      </div>
+    </footer>
+
+  
+
+  <script src="./Markdown cheatsheet_files/jquery-3.2.1.min.js.download" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="./Markdown cheatsheet_files/jquery.fitvids.js.download"></script>
+
+  <!--
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="/assets/js/chatbox.js?v=0ac4978b4f"></script>
+  -->
+
+  <script type="text/javascript" src="./Markdown cheatsheet_files/tab.js.download"></script>
+  <!-- for syntax highlight -->
+  <script type="text/javascript" src="./Markdown cheatsheet_files/prism.js.download"></script>
+
+  <!-- for search
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
+  -->
+
+  <script>
+// ===== Scroll to Top ====
+ $(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#scrollBtn').fadeIn(500);    // Fade in the arrow
+    } else {
+        $('#scrollBtn').fadeOut(500);   // Else fade out the arrow
+    }
+});
+$('#scrollBtn').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+
+  </script>
+
+
+  <script type="text/javascript" src="./Markdown cheatsheet_files/lightbox.js.download"></script>
+<script>
+
+  // NOTE: Scroll performance is poor in Safari
+  // - this appears to be due to the events firing much more slowly in Safari.
+  //   Dropping the scroll event and using only a raf loop results in smoother
+  //   scrolling but continuous processing even when not scrolling
+  $(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+      lastScrollY = window.scrollY;
+      requestTick();
+    }
+
+    function onResize() {
+      lastWindowHeight = window.innerHeight;
+      lastDocumentHeight = $(document).height();
+      requestTick();
+    }
+
+    function requestTick() {
+      if (!ticking) {
+        requestAnimationFrame(update);
+      }
+      ticking = true;
+    }
+
+    function update() {
+      var trigger = title.getBoundingClientRect().top + window.scrollY;
+      var triggerOffset = title.offsetHeight + 35;
+      var progressMax = lastDocumentHeight - lastWindowHeight;
+
+      // show/hide floating header
+      if (lastScrollY >= trigger + triggerOffset) {
+        header.classList.add('floating-active');
+      } else {
+        header.classList.remove('floating-active');
+      }
+
+      progressBar.setAttribute('max', progressMax);
+      progressBar.setAttribute('value', lastScrollY);
+
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onResize, false);
+
+    update();
+  });
+</script>
+
+<!--
+<script type="text/javascript">
+  DiscourseEmbed = {
+    discourseUrl: 'https://discourse.opengenus.org/',
+    discourseEmbedUrl: 'http://iq.opengenus.org/markdown-cheatsheet/'
+  };
+
+  (function () {
+    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  })();
+</script>
+-->
+
+<script doctype="text/javascript">
+
+  //in-page links and table of contents
+  $('.in_page_link').click(function () {
+    event.preventDefault()
+
+    //scroll to the href of the link
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top
+    }, 500);
+    return false;
+
+  });
+
+  $(document).ready(function () {
+
+    var taglist_height = $('#taglist').height();
+    var tag_height = $('#tag_element').height();
+    var q_message = document.createElement('h6');
+
+
+    if (taglist_height >= 35) {
+      $("#more").show();
+    }
+
+    $('#more').click(function () {
+
+      $('#text').removeClass("less");
+      $("#less").show();
+      $(this).hide();
+    });
+
+    $('#less').click(function () {
+      $('#text').addClass("less");
+      $(this).hide();
+      $("#more").show();
+    });
+
+    //Add icon and colors to question answers
+    //click function will be shown if the question is answered correctly
+    $('.correct_option').click(function () {
+
+      var icon_check = '<i class="fa fa-check fadeMe" style="margin:5px;color:#33cc33;"></i>';
+      var icon_cross = '<i class="fa fa-times fadeMe" style="margin:5px;"></i>';
+
+      if ($(this).children().length < 1) {
+        $(this).siblings().children().remove();
+        $(this).siblings().prepend(icon_cross);
+        $(this).siblings().css({ "color": "coral", "border-color": "coral" });
+
+
+        $(this).addClass("correct_answer");
+        $(this).prepend(icon_check);
+        q_message.innerHTML = ("Well done, you are the best.");
+        q_message.classList.add("question_message");
+        q_message.style.color = "MediumSeaGreen";
+        $(this).parents(':eq(0)').prepend(q_message);
+
+        // Show the answer explanation
+
+        if ($(this).parent().siblings(".Answer_explanation").length >= 1) {
+          $(this).parent().siblings(".Answer_explanation").css({ "display": "block" });
+
+        }
+
+      }
+      $(this).attr('disabled', 'disabled');
+    });
+
+
+    //click function will   show the message if the question is answered incorrectly
+
+    $('.wrong_option').click(function () {
+      var icon = '<i class="fa fa-times fadeMe" style="margin:5px;"></i>';
+
+      if ($(this).children().length < 1) {
+        $(this).addClass("wrong_answer");
+
+        $(this).prepend(icon);
+        q_message.innerHTML = ("No worries, this answer is wrong, you must try again");
+        q_message.classList.add("question_message");
+        q_message.style.color = "coral";
+        $(this).parents(':eq(0)').prepend(q_message);
+      }
+
+    });
+
+  })
+
+  //shuffle question
+  function shuffle(arra1) {
+    var ctr = arra1.length, temp, index;
+
+    // While there are elements in the array
+    while (ctr > 0) {
+      // Pick a random index
+
+      index = Math.floor(Math.random() * ctr);
+      // Decrease ctr by 1
+      ctr--;
+      // And swap the last element with it
+
+      temp = arra1[ctr];
+      arra1[ctr] = arra1[index];
+      arra1[index] = temp;
+    }
+    return arra1;
+  }
+
+  //get the options
+  var questions = document.getElementsByClassName("questionlist");
+
+  // shuffle the elements , and remove options if they are more than 4
+  for (c = 0; c <= questions.length; c++) {
+
+    if(questions[c] === undefined)
+      break;
+
+    var index;
+    var ctr2 = questions[c].children.length;
+    var index;
+
+    while (ctr2 > 4) {
+      index = Math.floor(Math.random() * ctr2);
+      if (index != 0) {
+        questions[c].children[index].remove();
+
+        ctr2--;
+      }
+    }
+
+    var myArray = [1, 2, 3, 4];
+
+    shuffle(myArray);
+
+    for (i = 0; i <= 3; i++) {
+      questions[c].children[i].style.order = myArray[i];
+      questions[c].children[i].style.display = "block";
+    }
+  }
+
+</script>
+
+<style>
+a#referencelink {
+   display: block; 
+   cursor:pointer; 
+   background:rgb(181, 222, 250); 
+   padding-top:20px; 
+   padding-bottom:20px; 
+   width:100%; 
+   text-align:center; 
+   font-size: 20px; 
+   color: black;
+}
+</style>
+
+
+
+  <!-- script for search feature (disabled)
+  <script>
+    //Wait for other things to be loaded so the site doesn't wait on the search
+    $(document).ready(function () {
+      //Go grab all the posts on the blog, but only the slug and title fields
+      //That helps limit the amount of data sent and stored locally
+      $.get(ghost.url.api('posts', { limit: "all", fields: "slug,title,feature_image,meta_description" })).done(function (data) {
+        //add all the data returned to a variable
+        var searchData = data.posts;
+
+        //New bloodhound to make it searchable
+        var search = new Bloodhound({
+          datumTokenizer: Bloodhound.tokenizers.obj.whitespace('title'),
+          queryTokenizer: Bloodhound.tokenizers.whitespace,
+          local: searchData
+        });
+        $(document).click(function () {
+          $("#toggle").toggle("slide");
+        });
+        //Build the typeahead
+        $('#site-search .typeahead').typeahead(null, {
+          name: 'search',
+          display: 'title',
+          //source is the bloodhound variable
+          source: search,
+          templates: {
+            //display no result image if no result is found
+            empty: [
+              '<div class="search_noresult_image"><img src="/assets/images/search-empty.svg?v=0ac4978b4f"><p>No results found</p></div>'
+            ].join('\n'),
+            suggestion: function (data) {
+              if (data.meta_description == null) {
+                data.meta_description = "No description provided";
+              }
+              if (data.feature_image == null) {
+                data.feature_image = "/assets/images / search - image.jpg?v=0ac4978b4f";
+              }
+              var post_url = window.location.protocol + '%2F%2F' + window.location.host + "%2F" + data.slug;
+              var parsed_post_url = decodeURIComponent(post_url);
+              //check is description and image are avaialable
+              return '<div class="search_page_results"><a href="' + parsed_post_url + '" class="search_item_image"><img src="' + data.feature_image + '"></a><div class="search_item_text"><a href="' + parsed_post_url + '"class="search_item_title">' + data.title + '</a><div class="search_item_description">' + data.meta_description + '</div></div> </div>';
+            }
+          }
+        });
+        //display and close navbar window and search window
+        $('#navbar_close').bind('click', function () {
+          $('#nav_toggle').toggleClass('navigation_page_open');
+        });
+        $('#burgertoggle').bind('click', function () {
+          $('#nav_toggle').toggleClass('navigation_page_open');
+        });
+        $('.search_toggle').bind('click', function () {
+          $('#search_page').toggleClass('search_page_hide');
+        });
+        //Now show the search bar since getting data was successful
+        $('#site-search').show();
+      }).fail(function () {
+        //If the get request errors out, put an error in the console
+        console.log("Error getting Ghost API Data");
+      });
+    });
+  </script>
+  -->
+  <script async="" src="./Markdown cheatsheet_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113523348-1');
+</script>
+
+<!-- MathJax disabled
+<script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [["$", "$"], ["\\(", "\\)"]],
+        processEscapes: true
+    }
+});
+</script>
+-->
+
+<script type="text/javascript">
+var parent = document.querySelector(".kg-card-markdown p:nth-of-type(6)");
+var mg_1 = document.querySelector(".kg-card-markdown p:nth-of-type(9)");
+//var googlead = document.querySelector(".kg-card-markdown p:nth-of-type(4)");
+
+if(parent)
+	parent.insertAdjacentHTML('afterend', '<div id="262466033"></div><br>');
+else
+{
+    /*
+ 	var parent_tmp = document.querySelector(".kg-card-markdown");
+    parent_tmp.insertAdjacentHTML('beforebegin', '<div id="262466033"></div><br>');
+    */
+}
+    
+/*
+if(mg_1)
+	mg_1.insertAdjacentHTML('afterend', '<div id="M697970ScriptRootC1110520"></div>');
+else
+{
+    var mg_2 = document.querySelector(".kg-card-markdown");
+    mg_2.insertAdjacentHTML('beforebegin', '<div id="M697970ScriptRootC1110520"></div><br>');
+}
+*/
+</script>
+
+<!--
+<script src="https://jsc.mgid.com/i/q/iq.opengenus.org.1110520.js" async></script>
+-->
+
+<script type="text/javascript">
+    try {
+        window._mNHandle.queue.push(function (){
+            window._mNDetails.loadTag("262466033", "300x250", "262466033");
+        });
+    }
+    catch (error) {}
+</script>
+
+<script src="./Markdown cheatsheet_files/highlight.min.js.download"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href="https://iq.opengenus.org/markdown-cheatsheet/"></a><a class="lb-next" href="https://iq.opengenus.org/markdown-cheatsheet/"></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div><div>
+<div class="truepush_optin_notifications">
+
+</div>
+</div></body></html>
